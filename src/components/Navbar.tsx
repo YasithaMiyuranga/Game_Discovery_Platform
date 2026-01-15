@@ -1,13 +1,11 @@
 import { HStack, Image, Text } from "@chakra-ui/react";
-import logo from "../assets/react.svg";
+import logo from "../assets/logo.webp";
 
 const NavBar = () => {
   return (
     <HStack>
-      <Image src={logo} alt="React Logo" boxSize="50px" />
-      <Text fontSize="2xl" fontWeight="bold" color="white">
-        NavBar
-      </Text>
+      <Image src={logo} boxSize={"60px"} />
+      <Text> Navbar</Text>
     </HStack>
   );
 };

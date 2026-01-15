@@ -1,9 +1,9 @@
-import { Grid, GridItem, HStack, useBreakpointValue } from "@chakra-ui/react";
-import NavBar from "./components/Navbar";
-import GameGrid from "./components/ui/GameGrid";
+import { Grid, GridItem, useBreakpointValue } from "@chakra-ui/react";
+import NavBar from "./components/NavBar";
+import GameGrid from "./components/GameGrid";
 
 function App() {
-
+  // useBreakpointValue
   const showSidebar = useBreakpointValue({ base: false, lg: true });
 
   return (
@@ -13,25 +13,24 @@ function App() {
         lg: `"nav nav" "aside main" "footer footer"`,
       }}
     >
-      <GridItem area="nav" bg="black" p="4" color="white">
+      <GridItem area="nav">
         <NavBar />
       </GridItem>
 
+      {/* Using useBreakpointValue */}
       {showSidebar && (
         <GridItem area="aside" bg={"red"}>
           Side Bar
         </GridItem>
       )}
-
-      <GridItem area="main" bg="green" p="4" color="white">
+      <GridItem area="main">
         <GameGrid />
       </GridItem>
-
-      <GridItem area="footer" bg="yellow" p="4" color="black">
+      <GridItem area="footer" bg={"brown"}>
         Footer
       </GridItem>
     </Grid>
   );
-
 }
+
 export default App;
