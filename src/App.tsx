@@ -12,7 +12,7 @@ const showSidebar = useBreakpointValue({ base: false, lg: true });
         lg: `"nav nav" "aside main" "footer footer"`,
       }}
     >
-      <GridItem area="nav" bg="blue" p="4" color="white">
+      <GridItem area="nav" bg="black" p="4" color="white">
         <NavBar />
       </GridItem>
 
