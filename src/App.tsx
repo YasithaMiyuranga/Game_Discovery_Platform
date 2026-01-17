@@ -43,10 +43,9 @@ const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
             scrollbarWidth: "none",
           }}>
 
-
-
-
-          <GenreList onSelectGenre={(genre: Genre) => setSelectedGenre(genre)}/>
+          <GenreList 
+          onSelectGenre={(genre: Genre) => setSelectedGenre(genre)}
+          selectedGenre={selectedGenre}/>
         </GridItem>
       )}
 
