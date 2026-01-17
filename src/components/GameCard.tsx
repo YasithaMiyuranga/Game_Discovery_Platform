@@ -1,17 +1,24 @@
-import { Card, CardBody, Heading, Image } from "@chakra-ui/react";
+import { Card, CardBody, Heading, Image, HStack } from "@chakra-ui/react";
 import type { Game } from "../hooks/useGames";
-
+import PlatformIconsList from "./PlatformIconsList";
+import CriticScore from "./CriticScore";
 interface GameCardProps {
     game: Game;
 }
 const GameCard = ({ game }: GameCardProps) => {
     return (
-        <Card.Root borderRadius={"2xl"} overflow={"hidden"}>
-            <Image src={game.background_image} />
-            <CardBody>
-                <Heading>{game.name}</Heading>
-            </CardBody>
-        </Card.Root>
+      <Card.Root borderRadius={"2xl"} overflow={"hidden"}>
+        <Image src={game.background_image} />
+        <CardBody>
+          <Heading>{game.name}</Heading>
+          <HStack justifyContent={"space-between"}>
+            <PlatformIconsList
+              platforms={game.platforms.map((p) => p.platform)}
+            />
+            <CriticScore score={game.metacritic} />
+          </HStack>
+        </CardBody>
+      </Card.Root>
     );
 };
 
