@@ -9,7 +9,7 @@ const SearchInput = ({ onSearch }: SearchInputProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
   return (
     <form
-      style={{ width: "60%", display: "flex", justifyContent: "flex-end" }}
+      style={{ width: "400px", display: "flex", justifyContent: "flex-end" }}
       onSubmit={(e) => {
         e.preventDefault();
         if (inputRef.current) onSearch(inputRef.current.value);
@@ -18,8 +18,8 @@ const SearchInput = ({ onSearch }: SearchInputProps) => {
       <Input
         ref={inputRef}
         display={{ base: "none", md: "flex" }}
-        width={"60%"}
-        borderWidth={2}
+        width={"400px"}
+        borderWidth={2.5}
         borderColor={"white"}
         borderRadius={20}
         variant={"outline"}
