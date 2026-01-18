@@ -2,6 +2,10 @@
 
 A modern, responsive game discovery platform built with React and Chakra UI. Browse thousands of games, filter by genre and platform, and discover your next favorite game!
 
+## 🌐 Live Site URL
+**Click here👉 [SKY_Game_Discovery_Platform](https://yasithamiyuranga.github.io/Game_Discovery_Platform/) 👈**
+
+
 ![SKY Game Interface](screenshots/main-page.png)
 ![SKY Game Features](screenshots/all.png)
 
