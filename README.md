@@ -3,6 +3,7 @@
 A modern, responsive game discovery platform built with React and Chakra UI. Browse thousands of games, filter by genre and platform, and discover your next favorite game!
 
 ![SKY Game Interface](screenshots/main-page.png)
+![SKY Game Features](screenshots/all.png)
 
 ## ✨ Features
 
@@ -163,11 +164,6 @@ Contributions are welcome! Feel free to submit issues and pull requests.
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👨‍💻 Author
-
-**Yasitha Miyuranga**
-- GitHub: [@YasithaMiyuranga](https://github.com/YasithaMiyuranga)
-
 ## 🙏 Acknowledgments
 
 - Game data provided by [RAWG](https://rawg.io/)
@@ -175,5 +171,3 @@ This project is open source and available under the [MIT License](LICENSE).
 - Icons by [React Icons](https://react-icons.github.io/react-icons/)
 
 ---
-
-Made with ❤️ using React and Chakra UI
