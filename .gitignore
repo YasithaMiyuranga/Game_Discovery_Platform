@@ -7,6 +7,11 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+logo.webp
+react.svg
+Vortex.png
+SKY_Game1.png
+
 node_modules
 dist
 dist-ssr

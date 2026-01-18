@@ -1,5 +1,4 @@
-
-import { List, ListItem ,Image,HStack,Text, Spinner, Button} from "@chakra-ui/react";
+import { List, ListItem ,Image,HStack, Spinner, Button} from "@chakra-ui/react";
 import getOptimizedImageUrl from "../services/image-url";
 import type { Genre } from "../hooks/useGenre";
 import useGenre from "../hooks/useGenre";

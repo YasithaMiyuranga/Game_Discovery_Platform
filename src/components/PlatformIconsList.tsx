@@ -1,10 +1,8 @@
-import {
-  FaWindows, FaPlaystation, FaXbox, FaApple, FaLinux, FaAndroid,
-} from "react-icons/fa";
+import {FaWindows, FaPlaystation, FaXbox, FaApple, FaLinux, FaAndroid} from "react-icons/fa";
 import { MdPhoneIphone } from "react-icons/md";
 import { SiNintendo } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
-import { HStack, Icon, Text } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 import type { IconType } from "react-icons";
 import type { Platform } from "../hooks/useGames";
 
@@ -33,8 +31,8 @@ const PlatformIconsList = ({ platforms }: PlatformIconsListProps) => {
     <HStack gap={2}>
       {platforms.map((platform) => (
         <>
-          {Object.entries(iconsMap).map(([key, IconComponent]) =>
-            platform.slug === key ? <Icon key={key} as={IconComponent} /> : null,
+          {Object.entries(iconsMap).map(([key, Icon]) =>
+            platform.slug === key ? <Icon key={key} /> : null
           )}
         </>
       ))}
